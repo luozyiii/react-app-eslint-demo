@@ -1,4 +1,6 @@
-# create-react-app + eslint-config-alloy(有更好的可替换) + Prettier + vscode 统一代码风格的 react 项目
+# 统一代码风格的 react 项目
+
+#### create-react-app + eslint-config-alloy(有更好的可替换) + Prettier + vscode
 
 ## 使用 ceate-react-app 创建基础项目
 
