@@ -1,6 +1,11 @@
 # 统一代码风格的 react 项目
 
-#### create-react-app + eslint-config-alloy(有更好的可替换) + Prettier + vscode
+## 技术栈
+
+##### create-react-app + eslint-config-alloy(有更好的可替换) + Prettier + vscode
+
+我倾向于让 ESLint 去判断逻辑(代码正误，语法校验)，让 Prettier 去判断样式。
+这种解耦也可以让整体逻辑更清晰，所以，两者都需要，一个也不能少。
 
 ## 使用 ceate-react-app 创建基础项目
 
@@ -14,15 +19,19 @@ npm start
 
 ## 使用 eslint-config-alloy 配置
 
+> node 版本需在 12.0.0 以上
+
 https://github.com/AlloyTeam/eslint-config-alloy/blob/HEAD/README.zh-CN.md
 
 ### 安装依赖
 
-yarn add eslint-plugin-react eslint-config-alloy -D
+yarn add eslint-config-alloy -D
 
-备注：eslint babel-eslint 不在这里安装的原因是 默认 create-react-app 构建的时候已经默认安装过这两个依赖
+备注：eslint babel-eslint eslint-plugin-react 不在这里安装的原因是 默认 create-react-app 构建的时候已经默认安装过这三个依赖(yorn.lock 可以查看到)
 
-### package.json 配置
+### package.json 配置(不单独增加.eslintrc.js)
+
+增加 alloy,alloy/react 配置选项
 
 ```
 "eslintConfig": {
@@ -98,3 +107,5 @@ VSCode 的一个最佳实践就是通过配置 .vscode/settings.json 来支持�
   }
 }
 ```
+
+注意："editor.formatOnSave": true,

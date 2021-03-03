@@ -3874,6 +3874,7 @@ escodegen@^1.14.1:
 eslint-config-alloy@^3.10.0:
   version "3.10.0"
   resolved "https://registry.npm.taobao.org/eslint-config-alloy/download/eslint-config-alloy-3.10.0.tgz?cache=0&sync_timestamp=1609210356208&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-alloy%2Fdownload%2Feslint-config-alloy-3.10.0.tgz#b2d85ba3bd7dddcc6d7fc79088c192a646f4f246"
+  integrity sha1-sthbo7193cxtf8eQiMGSpkb08kY=
 
 eslint-config-react-app@^6.0.0:
   version "6.0.0"
